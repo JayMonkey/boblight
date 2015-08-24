@@ -2,7 +2,7 @@
 
 This is a fork of  Boblightd from https://github.com/arvydas/boblight
 
-This is work in progress with the objective of running boblightd on OSX driving WS2812B via Arduino
+NOTE: This is work in progress with the objective of running the standard boblightd on OSX driving WS2812B via Arduino
 
 From the source readme :-
 
@@ -14,7 +14,7 @@ Prepare the build environment
 
 Clone this repository
 
-	git clone http://github.com/arvydas/boblight
+	git clone http://github.com/jaymonkey/boblight
 
 Change directory
 
@@ -26,8 +26,7 @@ Run the following commands to set up build environment and build boblight
 	./configure --without-x11 --without-portaudio
 	make
 	
-Set up your configuration file as described in the [Boblight wiki](https://code.google.com/p/boblight/wiki/boblightconf). 
-Sample configuration files for BlinkStick are available in the ./conf subdirectory of the source code repository.
+Set up your configuration file as described in the [Boblight wiki](https://code.google.com/p/boblight/wiki/boblightconf). .
 
 Run boblightd by issuing the following command
 
@@ -35,5 +34,5 @@ Run boblightd by issuing the following command
 
 Alternatively you can supply your own config file manually, for example
 
-	./src/boblightd -c ./conf/blinkstick.conf
+	./src/boblightd -c ./conf/custom.conf
 
